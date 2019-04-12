@@ -15,6 +15,12 @@
         &:hover,
         &:focus {
             background-color: $color-blue;
+
+            h3,
+            p,
+            i {
+                color: $color-white;
+            }
         }
     }
 
