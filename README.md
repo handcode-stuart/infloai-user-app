@@ -1,4 +1,4 @@
-# infloAI User App by Stuart Morris
+# infloAI User App Build
 
 Please preview app here:
 https://stark-meadow-62868.herokuapp.com
