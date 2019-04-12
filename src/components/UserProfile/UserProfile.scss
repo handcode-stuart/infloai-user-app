@@ -1,0 +1,33 @@
+@import "../../index.scss";
+
+.user-profile {
+    &__header {
+        margin-bottom: 40px;
+    }
+
+    &__details {
+        @include mq(desktop_sm) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    &__row {
+        @include mq(desktop_sm) {
+            width: 50%;
+        }
+
+        &:first-child {
+            margin-bottom: 40px;
+
+            @include mq(desktop_sm) {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            color: $color-blue;
+        }
+    }
+}

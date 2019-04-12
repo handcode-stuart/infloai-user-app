@@ -1,0 +1,62 @@
+@import "../../index.scss";
+
+.user-list {
+    &__user {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 4px;
+
+        a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $color-blue;
+        }
+    }
+
+    &__toggle {
+        display: none;
+        margin: 30px 0;
+
+        @include mq(desktop_sm) {
+            display: block;
+        }
+
+        button {
+            background-color: $color-blue-light;
+            border: none;
+            color: white;
+            padding: 8px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 3px;
+            outline: none;
+            cursor: pointer;
+
+            &.active {
+                background-color: $color-blue;
+            }
+        }
+    }
+
+    &--grid {
+        @include mq(desktop_sm) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .user-list__user {
+            @include mq(desktop_sm) {
+                width: calc(50% - 5px);
+            }
+        }
+    }
+}

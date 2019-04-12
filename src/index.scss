@@ -1,0 +1,15 @@
+@import "../node_modules/sass-mq/mq";
+
+$mq-breakpoints: (
+    mobile: 320px,
+    tablet: 740px,
+    desktop_sm: 980px,
+    desktop_lg: 1200px,
+    wide: 1440px,
+    x_wide: 1600px,
+);
+
+$inflo-blue: #3d5afe;
+$color-blue: $inflo-blue;
+$color-black: #000;
+$color-blue-light: #90a1ff;

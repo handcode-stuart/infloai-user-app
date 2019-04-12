@@ -1,0 +1,69 @@
+@import "./index.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+        sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.active {
+    color: $color-blue;
+}
+
+a {
+    color: $color-black;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main {
+    padding: 40px 0;
+}
+
+.icon-info-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 14px;
+
+    i {
+        font-size: 22px;
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    p {
+        line-height: 1;
+        margin: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    &--align-top {
+        align-items: flex-start;
+    }
+}

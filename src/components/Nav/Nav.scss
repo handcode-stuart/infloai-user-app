@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.nav {
+    background-color: #f3f3f3;
+    padding: 20px 0;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+
+            &:first-child {
+                margin-right: 20px;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+}
